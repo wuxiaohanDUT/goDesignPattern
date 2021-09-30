@@ -13,11 +13,20 @@ func (w *Water) DrinkIt() {
 	fmt.Println("Water")
 }
 
-type Coffee struct {
+type Milk struct {
 	Water Drink
 }
 
-func (c *Coffee) DrinkIt() {
-	c.Water.DrinkIt()
-	fmt.Println("Coffee")
+func (m *Milk) DrinkIt() {
+	m.Water.DrinkIt()
+	fmt.Println("Milk")
+}
+
+type Tee struct {
+	Water Drink
+}
+
+func (t *Tee) DrinkIt() {
+	t.Water.DrinkIt()
+	fmt.Println("Tee")
 }
